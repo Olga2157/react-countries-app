@@ -1,0 +1,11 @@
+@import '/src/utilities/variables';
+@import '/src/utilities/mixins';
+
+.logo-message {
+  color:  $burgundy-color;
+}
+
+.logo-header {
+  @include uppercase;
+  font-size: $text-large;
+}

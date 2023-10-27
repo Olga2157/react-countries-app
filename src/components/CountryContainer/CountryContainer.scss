@@ -1,0 +1,33 @@
+@import "/src/utilities/variables";
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 1em;
+  width: 100%;
+  
+  #detail-country-name {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    text-align: center;
+    min-height: 100px;
+  }
+
+  .item {
+    display: flex;
+    max-height: 350px;
+    border-color: $grey-color;
+
+    img {   
+      width: 100%;
+      height: auto;
+      max-height: 300px;
+      object-fit: contain;
+      filter: drop-shadow(2px 2px 0 $grey-color)
+        drop-shadow(-2px -2px 0 $grey-color);
+    }
+  }
+}
